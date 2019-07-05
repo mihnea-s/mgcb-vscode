@@ -1,0 +1,68 @@
+{
+	"name": "monogame-pipeline-vscode",
+	"displayName": "monogame-pipeline-vscode",
+	"description": "Open .mgcb files with the Monogame Pipeline tool",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mihnea-s/monogame-pipeline-vscode.git"
+	},
+	"icon": "./icon.png",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:**/*.mgcb"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"properties": {
+				"mgcb.pipelineToolPath": {
+					"type": "string",
+					"default": "monogame-pipeline-tool",
+					"description": "Pipeline tool executable path."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "_mgcb.openInPipelineTool",
+				"title": "Open in Pipeline Tool"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "_mgcb.openInPipelineTool",
+					"when": "false"
+				}
+			],
+			"editor/context": [
+				{
+					"when": "resourceExtname == .mgcb",
+					"command": "_mgcb.openInPipelineTool",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc extension.ts"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"tslint": "^5.12.1",
+		"vscode-test": "^1.0.0-next.0"
+	}
+}
