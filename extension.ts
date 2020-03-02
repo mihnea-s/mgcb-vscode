@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 		let activeTextEditor = vscode.window.activeTextEditor;
 
 		if (activeTextEditor && toolPath) {
-			process.exec(`${toolPath} ${activeTextEditor.document.uri.fsPath}`);
+			process.exec(`"${toolPath}" "${activeTextEditor.document.uri.fsPath}"`);
 		}
 	});
 
