@@ -1,5 +1,6 @@
 {
 	"name": "monogame-pipeline-vscode",
+	"publisher": "abcdef",
 	"displayName": "monogame-pipeline-vscode",
 	"description": "Open .mgcb files with the Monogame Pipeline tool",
 	"version": "0.0.2",
