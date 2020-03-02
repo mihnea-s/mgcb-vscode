@@ -8,7 +8,7 @@
 		"type": "git",
 		"url": "https://github.com/mihnea-s/monogame-pipeline-vscode.git"
 	},
-	"icon": "./icon.png",
+	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
