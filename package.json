@@ -2,7 +2,7 @@
 	"name": "monogame-pipeline-vscode",
 	"displayName": "monogame-pipeline-vscode",
 	"description": "Open .mgcb files with the Monogame Pipeline tool",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mihnea-s/monogame-pipeline-vscode.git"
