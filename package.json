@@ -24,7 +24,7 @@
 			"properties": {
 				"mgcb.pipelineToolPath": {
 					"type": "string",
-					"default": "monogame-pipeline-tool",
+					"default": "mgcb-editor",
 					"description": "Pipeline tool executable path."
 				}
 			}
