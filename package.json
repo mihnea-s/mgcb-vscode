@@ -1,7 +1,7 @@
 {
 	"name": "monogame-pipeline-vscode",
 	"publisher": "abcdef",
-	"displayName": "monogame-pipeline-vscode",
+	"displayName": "MonoGame Content Builder",
 	"description": "Open .mgcb files with the MGCB editor",
 	"version": "0.0.2",
 	"repository": {
