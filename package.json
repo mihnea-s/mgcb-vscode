@@ -61,6 +61,13 @@
 				],
 				"configuration": "./language-configuration.json"
 			}
+		],
+		"grammars": [
+			{
+				"language": "mgcb",
+				"scopeName": "source.mgcb",
+				"path": "./language-syntax.json"
+			}
 		]
 	},
 	"scripts": {

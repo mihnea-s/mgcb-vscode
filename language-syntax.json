@@ -1,0 +1,53 @@
+{
+    "name": "MonoGame Content Builder",
+    "scopeName": "source.mgcb",
+    "fileTypes": [
+        "mgcb"
+    ],
+    "uuid": "69ef2498-809d-4c9b-bc30-c539026e3d78",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#commands"
+        },
+        {
+            "include": "#preprocessor"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.mgcb",
+                    "match": "(#.*$)"
+                }
+            ]
+        },
+        "commands": {
+            "patterns": [
+                {
+                    "name": "support.function.command.mgcb",
+                    "match": "(?:^\\s*)\\/(\\w+):?(?=\\b|\\s)"
+                },
+                {
+                    "name": "variable.parameter.mgcb",
+                    "match": "(?<=\\b|\\s)(\\w+)(?==\\b)"
+                },
+                {
+                    "name": "constant.language.mgcb",
+                    "match": "(?<=\\b|\\s)(false|true|No|Yes)(?=\\b|\\s)"
+                }
+            ]
+        },
+        "preprocessor": {
+            "patterns": [
+                {
+                    "name": "keyword.control.macro.mgcb",
+                    "match": "\\$(set|if|endif|(\\(\\w+\\)))(?=\\b|\\s)"
+                }
+            ]
+        }
+    }
+}
