@@ -1,0 +1,11 @@
+{
+    "comments": {
+        "lineComment": "#"
+    },
+    "autoClosingPairs": [
+        [
+            "$if",
+            "$endif"
+        ],
+    ],
+}

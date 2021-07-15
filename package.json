@@ -2,7 +2,7 @@
 	"name": "monogame-pipeline-vscode",
 	"publisher": "abcdef",
 	"displayName": "monogame-pipeline-vscode",
-	"description": "Open .mgcb files with the Monogame Pipeline tool",
+	"description": "Open .mgcb files with the MGCB editor",
 	"version": "0.0.2",
 	"repository": {
 		"type": "git",
@@ -49,7 +49,19 @@
 					"group": "navigation"
 				}
 			]
-		}
+		},
+		"languages": [
+			{
+				"id": "mgcb",
+				"aliases": [
+					"MonoGame Content Builder"
+				],
+				"extensions": [
+					".mgcb"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
