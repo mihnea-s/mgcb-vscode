@@ -3,14 +3,14 @@
 	"publisher": "abcdef",
 	"displayName": "MonoGame Content Builder",
 	"description": "Edit MonoGame Content Builder files in VSCode",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mihnea-s/mgcb-vscode.git"
 	},
 	"icon": "./media/icon.png",
 	"engines": {
-		"vscode": "^1.36.0"
+		"vscode": "^1.62.0"
 	},
 	"categories": [
 		"Other"
@@ -87,13 +87,10 @@
 	},
 	"devDependencies": {
 		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
+		"@types/vscode": "^1.62.0",
 		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.0-next.0"
+		"typescript": "^3.3.1"
 	}
 }
