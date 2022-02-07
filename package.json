@@ -16,7 +16,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"workspaceContains:**/*.mgcb"
+		"workspaceContains:**/*.mgcb",
+		"onCommand:_mgcb.openInExternalEditor"
 	],
 	"main": "./extension.js",
 	"contributes": {
