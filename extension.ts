@@ -9,7 +9,9 @@ export function activate(context: vscode.ExtensionContext) {
 		let activeTextEditor = vscode.window.activeTextEditor;
 
 		if (activeTextEditor && toolPath) {
-			process.exec(`"${toolPath}" "${activeTextEditor.document.uri.fsPath}"`);
+			process
+				.execFile(toolPath, [activeTextEditor.document.uri.fsPath])
+				.on('error', err => vscode.window.showErrorMessage(`Could not open in editor: ${err.message}`));
 		}
 	});
 
