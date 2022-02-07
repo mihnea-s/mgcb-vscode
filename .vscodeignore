@@ -4,7 +4,7 @@ out/test/**
 src/**
 .gitignore
 shell.nix
-screenshot.png
+media/screenshot.png
 **/tsconfig.json
 **/tslint.json
 **/*.map

@@ -3,9 +3,9 @@ import * as process from 'child_process';
 
 export function activate(context: vscode.ExtensionContext) {
 
-	let disposable = vscode.commands.registerCommand('_mgcb.openInPipelineTool', () => {
+	let disposable = vscode.commands.registerCommand('_mgcb.openInExternalEditor', () => {
 
-		let toolPath = vscode.workspace.getConfiguration().get<string>("mgcb.pipelineToolPath");
+		let toolPath = vscode.workspace.getConfiguration().get<string>("mgcb.executablePath");
 		let activeTextEditor = vscode.window.activeTextEditor;
 
 		if (activeTextEditor && toolPath) {

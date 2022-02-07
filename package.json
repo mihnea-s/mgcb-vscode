@@ -1,14 +1,14 @@
 {
-	"name": "monogame-pipeline-vscode",
+	"name": "mgcb-vscode",
 	"publisher": "abcdef",
 	"displayName": "MonoGame Content Builder",
-	"description": "Open .mgcb files with the MGCB editor",
+	"description": "Edit MonoGame Content Builder files in VSCode",
 	"version": "0.0.3",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mihnea-s/monogame-pipeline-vscode.git"
+		"url": "https://github.com/mihnea-s/mgcb-vscode.git"
 	},
-	"icon": "icon.png",
+	"icon": "./media/icon.png",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -22,30 +22,41 @@
 	"contributes": {
 		"configuration": {
 			"properties": {
-				"mgcb.pipelineToolPath": {
+				"mgcb.executablePath": {
 					"type": "string",
 					"default": "mgcb-editor",
-					"description": "Pipeline tool executable path."
+					"description": "MGCB editor executable path."
 				}
 			}
 		},
 		"commands": [
 			{
-				"command": "_mgcb.openInPipelineTool",
-				"title": "Open in Pipeline Tool"
+				"command": "_mgcb.openInExternalEditor",
+				"title": "Open in external editor",
+				"icon": {
+					"dark": "./media/button-dark.svg",
+					"light": "./media/button-light.svg"
+				}
 			}
 		],
 		"menus": {
 			"commandPalette": [
 				{
-					"command": "_mgcb.openInPipelineTool",
+					"command": "_mgcb.openInExternalEditor",
 					"when": "false"
 				}
 			],
 			"editor/context": [
 				{
+					"command": "_mgcb.openInExternalEditor",
 					"when": "resourceExtname == .mgcb",
-					"command": "_mgcb.openInPipelineTool",
+					"group": "navigation"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "_mgcb.openInExternalEditor",
+					"when": "resourceExtname == .mgcb",
 					"group": "navigation"
 				}
 			]

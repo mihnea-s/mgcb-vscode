@@ -2,7 +2,7 @@
 
 Right click in any .mgcb file to open it in the MonoGame Content Builder editor.
 
-![Screenshot](screenshot.png)
+![Screenshot](./media/screenshot.png)
 
 ## Prerequisites
 
