@@ -1,3 +1,5 @@
+# UNMAINTAINED! PLEASE SEE [@MangriMen's fork ](https://github.com/MangriMen/mgcb-vscode)
+
 # MonoGame Content Builder
 
 Right click in any .mgcb file to open it in the MonoGame Content Builder editor.
